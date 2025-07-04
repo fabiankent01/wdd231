@@ -17,7 +17,8 @@ header{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Aligns header content to the left */
+    padding-left: 2rem;
 }
 
 #menu, #close {
@@ -29,37 +30,34 @@ header{
     align-items: center;
 }
 
-.name {
-    width: 100%;
-}
-
 header .name{
     font-size: 20px;
     font-weight: 100;
+    white-space: nowrap;
+    margin-left: 20px;
 }
 
 nav{
     margin: 0 auto;
     display: block;
     background-color: black;
-    /* position: absolute;
-    bottom: 0;
-    right: 0; */
     width: 100%;
 }
 
 nav ul{
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
+    width: auto; /* Let it size to content */
+    margin: 0;
+    padding: 0 0px; /* Add some left padding */
     display: flex;
-    /* align-items: center; */
+    justify-content: flex-start; /* Aligns nav items to the left */
+    gap: 0px; /* Add space between links */
 }
 
 nav ul>li{
-    text-align: center;
+    text-align: left;
     display: block;
-    flex: 1 1 100%;
+    flex: 0 0 5%;
+    white-space: nowrap;
 }
 
 nav ul>li>a:hover {
@@ -70,7 +68,7 @@ nav ul>li>a:hover {
 nav ul>li>a{
     width: 100%;
     display: block;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
     font-weight: lighter;
@@ -84,7 +82,7 @@ main{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 95vw;
+    max-width: 99vw;
     margin: 0 auto;
     gap: 20px;
     padding: 20px;
@@ -141,6 +139,7 @@ main h1 {
     width: 100px;
     border-radius: 8px;
     object-fit: cover;
+    margin-left: -20px;
 }
 
 .location-image-container{
