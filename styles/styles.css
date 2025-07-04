@@ -137,8 +137,8 @@ main h1 {
 }
 
 .image-container img{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 8px;
     object-fit: cover;
 }
