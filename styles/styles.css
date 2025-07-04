@@ -10,7 +10,7 @@ body, html {
 }
 
 header{
-    background-color: #032d47;
+    background-color: #8a0303;
     color: white;
     padding: 10px;
     height: auto;
@@ -119,11 +119,14 @@ main h1 {
     font-size: 19px;
     font-weight: 100;
     text-align: center;
-    background-color: #032d47;
+    background-color: #8a0303;
     color: white;
     padding: 10px 0;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+.card p {
+    padding: 12px;
 }
 
 .image-container{
@@ -201,7 +204,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #032d47;
+    background-color: #8a0303;
     padding: 10px;
     height: 120px;
 }
