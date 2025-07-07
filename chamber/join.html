@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iwinosa Fabian Idahosa" >
+    <meta
+            name="description"
+            content="Benncima Chamber of Commerce - Join" >
+    <meta property="og:title" content="Benncima Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fabiankent01.github.io/wdd230/chamber/images/edo.jpg" >
+    <meta property="og:url" content="https://fabiankent01.github.io/wdd230/chamber/" >
+    <title>Chamber of Commerce - Join</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>  
+
+<body>
+    <header>
+        <img id="logo" src="images/logo1.webp" alt="company logo">
+        <span>Benncima Chamber of Commerce</span>
+    </header>
+    <div id="mode">
+        🕶️
+    </div>
+    <a id="menu"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" >Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul> 
+    </nav>
+
+        <main id="main">
+            <form method="get" action="thankyou.html" class="wf1" id="left-side">
+                <fieldset>
+                    <legend> Applicant Information</legend>
+                    <label>First Name*<input type="text" id="firstname" name="firstname" required></label>
+
+                    <label>Last Name*<input type="text" id="lastname" name="lastname" required></label>
+
+                    <label>Title or Position*<input type="text" pattern="^[A-Za-z\- ]{2,}" id="title" name="title" required></label>
+    
+                    <label>Email*<input type="email" pattern="[a-zA-Z0-9_.\-]+@[a-Za-Z]+\.(?=.*com)" id="email" name="email" 
+                        placeholder="someone@example.com" title="Please enter a valid email address" required></label>
+
+                    <label>Mobile Phone number*<input type="tel"  id="phone" name="phone" required></label>
+                </fieldset> 
+    
+                <!-------------------------------- MEMBERSHIP -------------------------------------->
+
+                <fieldset>
+                    <legend>Membership Information</legend>
+                    <div class="memInfo">Membership Level</div>
+                    <label><input type="radio" name="membership" value="np">NP Membership (For non profit organizations)</label>
+                    <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business/Organization's Information</legend>
+                    <div class="memInfo">Business/Organization's details</div>
+                    <label>Business/Organization's name*<input type="text" id="business" name="business" required></label>
+
+                    <label>Business/Organization's description <span>(Optional)</span>
+                    <textarea name="businessDesc" cols="30" rows="6" id="businessDesc" 
+                    placeholder="Enter a description of your Business/Organization" spellcheck="true" ></textarea></label>
+                </fieldset>
+
+                <input type="hidden" name="milli" id="milli" >
+                     
+
+                <div class="button"><input type="submit" value="Create My Account" id="submit"> </div>                    
+                    
+            </form>
+
+
+            <div id="right-side">
+                <hr class="firsthr">
+                <h1 class="firsth1">Membership Tiers & Benefits</h1>
+                <section class="section">
+                    <h1>NP Membership (Non-Profit)</h1>
+                    <Span>Cost: Free</Span>
+                    <ul class="list">
+                        <li>Access to networking events with other non-profit organizations.<hr></li>
+                        <li>Free or discounted participation in workshops and training sessions.<hr></li>
+                        <li>Inclusion in the organization's directory for increased visibility.<hr></li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h1>Bronze Membership</h1>
+                    <Span>Cost: $250 per year</Span>
+                    <ul class="list">
+                        <li>Basic advertising opportunities on the organization's website or newsletter. <hr></li>
+                        <li>10% discount on event registrations.<hr></li>
+                        <li>Quarterly members-only webinar on industry trends and best practices.<hr></li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h1>Silver Membership</h1>
+                    <Span>Cost: $500 per year</Span>
+                    <ul class="list">
+                        <li>Enhanced advertising exposure on the organization's website, newsletter, and social media.<hr></li>
+                        <li>15% discount on event registrations.<hr></li>
+                        <li>Monthly members-only webinars covering specific topics in-depth.<hr></li>
+                        <li>Priority access to limited-capacity events.<hr></li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h1>Gold Membership</h1>
+                    <Span>Cost: $1000 per year</Span>
+                    <ul class="list">
+                        <li>Premium advertising slots on the organization's website, newsletter, and social media.<hr></li>
+                        <li>20% discount on event registrations.<hr></li>
+                        <li>Access to an annual weekend retreat or conference at a discounted rate.<hr></li>
+                        <li>Priority access to limited-capacity events.<hr></li>
+                        <li>Priority access to all events, workshops, and training sessions.<hr></li>
+                    </ul>
+                </section>
+            </div>
+
+        </main>
+    
+
+        <footer>
+            <img  src="images/logo.webp" alt="logo">
+    
+            <div class="footer date">
+                <span id="currentYear"></span>
+                <p>Get in touch:
+                    0810 040 5583
+                    info@benccima.org</p>
+            </div>
+    
+            <div class="footer name">
+                <p>Iwinosa Fabian Idahosa, Benin City, Edo State, Nigeria</p>
+            </div>
+    
+            <div class="footer chamber">
+                <p>WDD230- Chamber Site project</p>
+                <p id="lastModified"></p>
+            </div>
+             
+        </footer>
+        <script src="scripts/dates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/directory.js"></script>
+        <script src="scripts/members.js"></script>
+
+
+    </div>
+</body>
+</html>
