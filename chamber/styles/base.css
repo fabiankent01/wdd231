@@ -239,6 +239,32 @@ footer img {
     padding-left: 18px;
     padding-right: 18px;
 }
+
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: maroon;  /* Professional blue */
+  color: #fff;
+  margin-top: 85px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+  background-color: rgb(207, 3, 3);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.cta:focus {
+  outline: 3px solid #ffdd57;
+}
 .secondbox {
     display: flex;
     justify-content:space-around;
