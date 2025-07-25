@@ -9,14 +9,18 @@
             content="Benncima Chamber of Commerce - Join" >
     <meta property="og:title" content="Benncima Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://fabiankent01.github.io/wdd230/chamber/images/edo.jpg" >
-    <meta property="og:url" content="https://fabiankent01.github.io/wdd230/chamber/" >
-    <title>Chamber of Commerce - Join</title>
+    <meta property="og:description" content="Join our organization to benefit." />
+    <meta property="og:image" content="https://fabiankent01.github.io/wdd231/chamber/" >
+    <meta property="og:url" content="https://fabiankent01.github.io/wdd231/chamber/" >
+    <title>Join - Bencimma Chamber of Commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
-</head>  
+</head>
 
 <body>
     <header>
@@ -92,6 +96,7 @@
                         <li>Free or discounted participation in workshops and training sessions.<hr></li>
                         <li>Inclusion in the organization's directory for increased visibility.<hr></li>
                     </ul>
+                    <a href="#" class="learn-more" data-modal="modal-np">Learn More</a>
                 </section>
 
                 <section class="section">
@@ -102,6 +107,7 @@
                         <li>10% discount on event registrations.<hr></li>
                         <li>Quarterly members-only webinar on industry trends and best practices.<hr></li>
                     </ul>
+                    <a href="#" class="learn-more" data-modal="modal-bronze">Learn More</a>
                 </section>
 
                 <section class="section">
@@ -113,6 +119,7 @@
                         <li>Monthly members-only webinars covering specific topics in-depth.<hr></li>
                         <li>Priority access to limited-capacity events.<hr></li>
                     </ul>
+                    <a href="#" class="learn-more" data-modal="modal-silver">Learn More</a>
                 </section>
 
                 <section class="section">
@@ -125,9 +132,43 @@
                         <li>Priority access to limited-capacity events.<hr></li>
                         <li>Priority access to all events, workshops, and training sessions.<hr></li>
                     </ul>
+                    <a href="#" class="learn-more" data-modal="modal-gold">Learn More</a>
                 </section>
             </div>
 
+
+            <!-- Modals -->
+            <div class="modal" id="modal-np">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>NP Membership (Non-Profit)</h2>
+                    <p>Includes access to networking events, free or discounted workshops, and listing in our directory for visibility.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-bronze">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Bronze Membership</h2>
+                    <p>Includes basic advertising, a 10% event discount, and quarterly exclusive webinars for industry insights.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-silver">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Silver Membership</h2>
+                    <p>Enjoy enhanced advertising, 15% off events, monthly deep-dive webinars, and priority access to limited events.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-gold">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Gold Membership</h2>
+                    <p>Premium advertising, 20% event discounts, annual retreat access, and top-priority access to all events and training.</p>
+                </div>
+            </div>
         </main>
     
 
@@ -155,7 +196,7 @@
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/directory.js"></script>
         <script src="scripts/members.js"></script>
-
+        <script src="scripts/modal.js"></script>
 
     </div>
 </body>
