@@ -14,6 +14,7 @@
     <title>Chamber of Commerce and Discover</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -36,92 +37,20 @@
         </ul> 
     </nav>
 
-    <main id="main-discover" class="discover"> 
-        <h1>Benncima Chamber of Commerce</h1>
-        
-        <div class="left-sidebar">
-            <section>
-                <h2>Last Visit</h2>
-                <p id="last-visit"></p>
-            </section>
-
-            <section>
-                <h2>Population (2006)</h2>
-                <ul>
-                    <li>Total: 1,421,320</li>
-                    <li>Density: 870/km² (2,300/sq mi)</li>
-                    <li>Rank: 6th</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>GDP (PPP, 2015 int. Dollar)</h2>
-                <ul>
-                    <li>Year: 2024</li>
-                    <li>Total: $16.6 billion</li>
-                    <li>Per Capita: $8,700</li>
-                </ul>
-            </section>
+    <main>
+        <h1>Chamber of Commerce - Discover</h1>
+        <div  class="edo-container" id="edo-container">
         </div>
-
-        <div class="right-sidebar">
-            <figure>
-                <picture>
-                    <source srcset="images/farming-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/farming-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/farming-large.webp" alt="Farming" loading="lazy" width="1500" height="750">
-                </picture>
-                <figcaption>Earth-friendly estate</figcaption>
-            </figure>
-
-            <figure>
-                <picture>
-                    <source srcset="images/infrastructure-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/infrastructure-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/infrastructure-large.webp" alt="Infrastructure" loading="lazy" width="1500" height="750">
-                </picture>
-                <figcaption>Development driven</figcaption>
-            </figure>
-
-            <figure>
-                <picture>
-                    <source srcset="images/palace-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/palace-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/palace-large.webp" alt="Oba's palace" loading="lazy" width="1500" height="750">
-                </picture>
-                <figcaption>Land of nobility</figcaption>
-            </figure>
-
-            <figure>
-                <picture>
-                    <source srcset="images/school-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/school-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/school-large.webp" alt="School" loading="lazy" width="1500" height="750">
-                </picture>
-                <figcaption>Land of learners</figcaption>
-            </figure>
-
-            <figure>
-                <picture>
-                    <source srcset="images/tech-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/tech-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/tech-large.webp" alt="Tech" loading="lazy" width="1500" height="750">
-                </picture>
-                <figcaption>Tech-topia</figcaption>
-            </figure>
-
-            <figure>
-                <picture>
-                    <source srcset="images/tailor-small.webp" media="(max-width: 400px)">
-                    <source srcset="images/tailor-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/tailor-large.webp" alt="Tailor" loading="lazy" width="1500" height="750">
-                </picture>
-                <figcaption>Hustle oriented</figcaption>
-            </figure>    
-        </div>
-   
-       
     </main>
+
+    <div class="lastVisitedCont">
+        <div class="closeCont">
+            <span>x</span>
+        </div>
+        <section class="lastVisited">
+            <p></p>
+        </section>
+    </div>
 
         <footer>
             <img  src="images/logo.webp" alt="logo">
@@ -147,5 +76,6 @@
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/directory.js"></script>
         <script src="scripts/dm.js"></script>
+        <script src="scripts/data.js"></script>
 </body>
 </html>

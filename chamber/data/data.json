@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Edo State Art Gallery",
+      "image": "images/discover/art-small.webp",
+      "address": "Oba Market Road, Benin City, Edo State",
+      "description": "A stunning collection of traditional and modern artworks, showcasing the cultural heritage of Edo State."
+    },
+    {
+      "title": "Benin Business District",
+      "image": "images/discover/business-small.webp",
+      "address": "Ring Road, Benin City, Edo State",
+      "description": "A bustling hub of economic activity, full of local markets and modern businesses driving growth."
+    },
+    {
+      "title": "Edo Farming Community",
+      "image": "images/discover/farming-small.webp",
+      "address": "Ekpoma, Edo State",
+      "description": "A thriving agricultural community known for its yam, cassava, and palm produce."
+    },
+    {
+      "title": "Samuel Ogbemudia Stadium",
+      "image": "images/discover/scaled-small.webp",
+      "address": "Ikpoba Hill, Benin City, Edo State",
+      "description": "Experience the excitement of local and national sporting events at this iconic stadium."
+    },
+    {
+      "title": "Royal Palace of the Oba of Benin",
+      "image": "images/discover/palace-small.webp",
+      "address": "King’s Square, Benin City, Edo State",
+      "description": "A UNESCO World Heritage site and seat of the Oba of Benin, representing centuries of tradition and history."
+    },
+    {
+      "title": "National Museum of Benin-City",
+      "image": "images/discover/museum-large.webp",
+      "address": "King’s Square, Benin City, Edo State",
+      "description": "Home to centuries-old artifacts and bronze sculptures from the Benin Kingdom."
+    },
+    {
+      "title": "Benin Moat",
+      "image": "images/discover/download-large.webp",
+      "address": "Uselu, Benin City, Edo State",
+      "description": "One of the world’s largest man-made earthworks, built for defense and legacy by ancient Benin people."
+    },
+    {
+      "title": "Igun Street",
+      "image": "images/discover/igun.webp",
+      "address": "Igun Street, Benin City, Edo State",
+      "description": "A UNESCO-recognized cultural site where bronze casting still thrives using traditional methods."
+    }
+  ]
+  
