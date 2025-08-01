@@ -79,77 +79,81 @@ nav a:hover {
     padding: 6px;
 }
 
-.discover h1{
-    font-size: 2rem;
-    color: rgb(128, 0, 0);
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    text-align: center;
-    font-family: "Kanit", sans-serif;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 40px;
-    margin: 3rem;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 300px;
-    margin-inline-end: 300px;
-}
-#main-discover {
+.cards {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.left-sidebar {
-    background-color: #FFFDD0;
-    box-shadow: 3px 5px 20px black;
-    margin-left: 70px;
-    width: 80%;
-    height: 40%;
-}
-.left-sidebar section{
-    padding: 1rem;
-}
-
-.left-sidebar section h2{
-    font-family: "Kanit", sans-serif;
-}
-
-.left-sidebar li{
-    font-family: "Kanit", sans-serif;
-    margin: 0 0 0 -20px;
-}
-
-.left-sidebar section h2{
-    text-decoration: underline;
-    margin: 8px 0 0 20px;
-    color: rgb(128, 0, 0);
-}
-
-.right-sidebar{
-    background-color: #FFFDD0;
-    box-shadow: 3px 5px 20px black;
-    margin-right: 70px;
-}
-
-.right-sidebar figure{
-    margin: 2rem;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    grid-template-areas:
+      "name name"
+      "photograph photograph"
+      "description description"
+      "address address"
+      "button button";
+    background: #f9f9f9;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 1rem 8px;
+  }
+  
+  .cards h2 { 
+    grid-area: name; 
+    margin-top: 1rem;
 }
-
-figcaption{
-    display: block;
-    text-align: center;
+  .cards figure {
+     grid-area: photograph; 
+     overflow: hidden;
+    }
+  .cards address { 
+    height: 10px;
+    grid-area: address;
+    color: #555; 
+}
+  .cards p { 
+    grid-area: description; 
+}
+  .cards button { 
+    grid-area: button; 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
     margin-bottom: 1rem;
-    margin-top: 10px;
-    border-bottom: 1px solid black;
-    font-family: "Kanit", sans-serif;
+}
+  .cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+
+  }
+  .cards img:hover {
+    transform: scale(1.1);
+  }
+
+  .lastVisitedCont {
+    position: fixed;
+    bottom: 0;
+    right: -100%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 6px 1px#ccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    transition: right 1s ease-in-out
+}
+.lastVisited {
+    height: 80%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.closeCont {
+    text-align: right;
+    font-size: 20px;
+}
+.closeCont span {
+    cursor: pointer;
 }
 
 footer {
