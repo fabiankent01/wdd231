@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="icon" href="images/favicon.ico">
@@ -285,19 +286,8 @@
             </a>
         </div>
     </footer>   
-    <script>
-        const menuToggle = document.getElementById('mobile-menu');
-        const nav = document.getElementById('nav');
-        const closeMenu = document.getElementById('close-menu');
     
-        menuToggle.addEventListener('click', () => {
-            nav.classList.add('show-menu');
-        });
-    
-        closeMenu.addEventListener('click', () => {
-            nav.classList.remove('show-menu'); 
-        });
-    </script> 
+    <script src="scripts/nav.js"></script> 
     <script src="scripts/auth.js"></script>
     <script src="scripts/product.js"></script>
     <script src="scripts/filter.js"></script>
