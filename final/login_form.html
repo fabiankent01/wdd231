@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terra Balance - User Authentication</title>
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="auth-wrapper">
+    <div class="auth-container">
+      <div class="auth-header">
+        <img src="images/logo.webp" alt="Terra Balance Logo" class="company-logo">
+        <div class="company-name">Terra Balance</div>
+      </div>
+
+        <h2 id="form-title">Login</h2>
+        
+        <!-- Login Form -->
+        <form id="login-form">
+          <div class="input-group">
+              <input type="email" id="login-email" placeholder="Email" required>
+              <span class="error-message" id="login-email-error"></span>
+          </div>
+          <div class="input-group">
+              <input type="password" id="login-password" placeholder="Password" required>
+              <span class="error-message" id="login-password-error"></span>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signup-form" class="hidden">
+          <div class="input-group">
+              <input type="email" id="signup-email" placeholder="Email" required>
+              <span class="error-message" id="signup-email-error"></span>
+          </div>
+          <div class="input-group">
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <i class="toggle-password fas fa-eye" data-target="signup-password"></i>
+            <span class="error-message" id="signup-password-error"></span>
+          </div>
+        
+          <div class="input-group">
+              <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+              <i class="toggle-password fas fa-eye" data-target="confirm-password"></i>
+              <span class="error-message" id="confirm-password-error"></span>
+              <span class="match-message" id="password-match-message"></span>
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p id="toggle-text">
+          Don't have an account? <a href="#" id="toggle-form">Sign Up</a>
+      </p>
+    </div>
+</div>
+  <script src="scripts/login.js"></script>
+</body>
+</html>

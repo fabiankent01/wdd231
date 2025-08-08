@@ -1,0 +1,482 @@
+
+
+body{
+    font-family: "Afacad Flux", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  align-items: center;
+  padding: 10px 30px; /* Adjusted padding */
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-link.active {
+    font-weight: bold; /* Makes the text bold */
+    color: rgb(113, 216, 119); /* Optional: Change text color */
+}
+
+/* Logo and Brand Name */
+#logo {
+  width: 40px; /* Adjust logo size */
+  height: auto;
+}
+
+#logo_name {
+  display: flex;
+  align-items: center;
+  margin-left: 15px; /* Moves text closer to logo */
+}
+
+#logo_name p {
+  margin: 0 0 0 5px; /* Adjust spacing */
+  font-family: "Afacad Flux", serif;
+  font-size: 24px; /* Increase font size */
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.918);
+}
+
+/* Navigation Menu */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Increase spacing between links */
+  font-family: "Afacad Flux", serif; /* Matches company name font */
+  margin-left: auto; /* Pushes nav to the right */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #b8b8b8; /* Hover effect */
+}
+
+/* Dropdown Menu */
+.nav-item {
+  position: relative;
+}
+
+.nav-item > .nav-link::after {
+  content: '\2BC6'; /* Unicode for a downward caret ▼ */
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #000000fb; /* Darker background */
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: #050303; /* Hover effect */
+  color: #b8b8b8;
+}
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Login Button */
+.login-btn {
+  border: 2px solid #33af3a;
+  color: #33af3a;
+}
+
+.login-btn:hover {
+  background-color: #2e7d32;
+  color: #ecf0f1;
+}
+
+/* Sign Up Button */
+.signup-btn {
+  background-color: #2e7d32;
+  color: #ecf0f1;
+}
+
+.signup-btn:hover {
+  background-color: #33af3a;
+}
+.user-info {
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+}
+#user-name {
+  padding: 13px 5px 0 0;
+}
+.box1 {
+    position: relative; /* Establishes a positioning context for the overlay */
+    width: 100%; /* Adjust to desired size */
+}
+.title{
+    position: absolute; /* Allows overlay to stack on top of the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.541); /* Black with 50% opacity */
+    justify-content: center; /* Horizontally center text */
+    z-index: 2; /* Ensure it appears on top of the image */
+}
+#title {
+    font-family: "Afacad Flux", serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.918);
+    font-size: 90px;
+    margin: 100px 50px;
+    line-height: 1;
+    text-align: left;
+}
+.title p {
+    font-family: "Afacad Flux", serif;
+    font-weight: 600;
+    color:rgba(255, 255, 255, 0.918);
+    font-size: 20px;
+    text-align: left;
+    margin: -70px 50px;
+}
+.cows{
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+.product-block {
+    padding: 25px 0 10px;
+    margin: -20px 0px 30px 0px;
+    font-family: "Afacad Flux", serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+}
+#main-sub {
+    text-align: left;
+    padding: 0 50px 0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: -10px;
+    color: #2e7d32;
+}
+.main p {
+    text-align: left;
+    padding: 0 800px 0 50px;
+    font-size: 17px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    color: #fff;
+}
+#founders-info {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#founders-info h2 {
+  font-family: "Afacad Flux", serif;
+  color: #2e7d32;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.founders-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.founder-profile {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.founder-pic {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.founder-profile h3 {
+  font-family: "Afacad Flux", serif;
+  color: #2e7d32;
+  font-size: 24px;
+}
+
+.founder-profile p {
+  font-family: "Afacad Flux", serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  font-family: "Afacad Flux", serif;
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.contact-list i {
+  color: #2e7d32;
+  margin-right: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    flex-direction: column;
+    background-color: #2e7d32;
+    padding: 20px 0 50px;
+}
+iframe {
+    width: 100%;
+    max-width: 800px; /* Adjust width */
+    height: 1000px; /* Adjust height */
+    border: none;
+}
+footer {
+    display: block;
+    background-color: #2c2c2c;
+    padding-top: 3px;
+    padding-bottom: 30px;
+}
+footer p{
+    font-family: "Afacad Flux", serif;
+    font-weight: 600;
+    color:rgba(255, 255, 255, 0.918);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0px;
+    margin: 30px 90px;
+}
+.copy {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.social {
+    justify-self: center;
+}
+@media (min-width: 320px) and (max-width: 1300px) {
+  header {
+      flex-wrap: wrap;
+      padding: 10px 15px;
+  }
+  #logo_name p {
+      font-size: 18px;
+  }
+  nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(10px); /* Glass effect */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1); /* Smooth easing */
+      z-index: 1000;
+  }
+
+  nav.show-menu {
+      right: 0;
+  }
+
+  .close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+  }
+
+  .menu-toggle {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+  }
+
+  .nav-link {
+      margin: 20px 0;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+  }
+
+  nav.show-menu .nav-link {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .nav-link:nth-child(2) { transition-delay: 0.1s; }
+  .nav-link:nth-child(3) { transition-delay: 0.2s; }
+  .nav-link:nth-child(4) { transition-delay: 0.3s; }
+  .nav-link:nth-child(5) { transition-delay: 0.4s; }
+  
+  .menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+  }
+  
+  .menu-overlay.show-overlay {
+      opacity: 1;
+      pointer-events: all;
+  }
+
+  .box1 {
+      text-align: center;
+  }
+  .cows {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+  }
+  #title {
+      text-align: center;
+      font-size: 50px;
+      margin: 100px 10px;
+  }
+  .title p {
+      text-align: center;
+      font-size: 17px;
+      margin: -60px 20px 0px;
+  }
+  .product-block {
+      font-size: 17px;
+      padding: 20px 30px 5px;
+  }
+  #main-sub {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+  .main p {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    padding: 10px;
+    height: auto; /* Remove fixed height */
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+
+  footer {
+      text-align: center;
+      padding: 20px;
+  }
+  footer p {
+      font-size: 17px;
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+      line-height: 1;
+  }
+  .copy {
+      font-size: 15px;
+      margin-top: 30px;
+  }
+  .social {
+      display: flex;
+      justify-content: center; /* Centers the icons horizontally */
+      align-items: center;
+      gap: 10px; /* Adds space between icons */
+      margin-top: 20px;
+  }
+  .social a {
+      display: inline-block;
+      font-size: 10px; /* Adjust size as needed */
+  }
+}
