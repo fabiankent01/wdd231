@@ -9,3 +9,4 @@ const menuToggle = document.getElementById('mobile-menu');
         closeMenu.addEventListener('click', () => {
             nav.classList.remove('show-menu'); 
         });
+
